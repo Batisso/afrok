@@ -24,9 +24,21 @@
   <script
     type="text/javascript">window.__WEBFLOW_CURRENCY_SETTINGS = { "currencyCode": "USD", "symbol": "$", "decimal": ".", "fractionDigits": 2, "group": ",", "template": "{{wf {\"path\":\"symbol\",\"type\":\"PlainText\"} }} {{wf {\"path\":\"amount\",\"type\":\"CommercePrice\"} }} {{wf {\"path\":\"currencyCode\",\"type\":\"PlainText\"} }}", "hideDecimalForWholeNumbers": false };</script>
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      overflow-x: hidden;
+      width: 100%;
+    }
+
     body {
       background-color: #E3E7D3 !important;
       color: #0F3D2E;
+      overflow-x: hidden;
+      width: 100%;
+      position: relative;
     }
 
     .page-content {
@@ -573,8 +585,10 @@
 
       .item-price {
         font-family: monospace;
-        font-size: 1.25rem;
+        font-size: 2rem;
         white-space: nowrap;
+        font-weight: 900;
+        color: #0F3D2E;
       }
 
       .item-desc {
@@ -628,7 +642,7 @@
         }
 
         .item-price {
-          font-size: 1.1rem;
+          font-size: 1.5rem;
         }
       }
 
@@ -669,7 +683,7 @@
         }
 
         .item-price {
-          font-size: 1rem;
+          font-size: 1.5rem;
         }
 
         .item-desc {
@@ -708,7 +722,7 @@
         }
 
         .item-price {
-          font-size: 0.95rem;
+          font-size: 1.5rem;
         }
 
         .item-desc {
